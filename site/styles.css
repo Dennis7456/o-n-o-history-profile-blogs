@@ -1,12 +1,12 @@
 :root {
-  --bg: #0b1220;
-  --panel: #121a2b;
-  --card: #0f1626;
-  --text: #e6ebff;
-  --muted: #9bb0d3;
-  --brand: #5b8cff;
-  --accent: #20c997;
-  --border: #1e2a44;
+  --bg: #ffffff;
+  --panel: #f8f9fa;
+  --card: #ffffff;
+  --text: #212529;
+  --muted: #6c757d;
+  --brand: #0056b3;
+  --accent: #28a745;
+  --border: #dee2e6;
 }
 * { box-sizing: border-box; }
 html, body { height: 100%; }

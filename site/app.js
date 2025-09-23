@@ -4,6 +4,7 @@ const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 const state = {
   chronology: null,
   blog: null,
+  company: null,
   filters: { category: '', year: '' },
 };
 
@@ -21,12 +22,14 @@ function categoryColor(category) {
 }
 
 async function loadData() {
-  const [chron, blog] = await Promise.all([
+  const [chron, blog, company] = await Promise.all([
     fetch('./data/kennedy-ogetto-cases-chronological.json').then(r => r.json()),
     fetch('./data/blog.json').then(r => r.json()),
+    fetch('./data/company-profile.json').then(r => r.json()),
   ]);
   state.chronology = chron.kennedy_ogetto_cases;
   state.blog = blog.blog;
+  state.company = company.company_profile;
 }
 
 function buildFilters() {
@@ -98,6 +101,143 @@ function renderBlog() {
   });
 }
 
+function renderCompany() {
+  const container = $('#companyContent');
+  if (!state.company) return;
+  
+  const company = state.company;
+  
+  container.innerHTML = `
+    <div style="padding: 16px;">
+      <!-- Firm Overview -->
+      <section class="company-section">
+        <h2 style="color: var(--brand); margin-bottom: 16px;">${company.firm_name}</h2>
+        <p style="margin-bottom: 16px; font-size: 16px; line-height: 1.6;">${company.firm_description}</p>
+        <div style="background: var(--panel); padding: 12px; border-radius: 8px; margin-bottom: 24px;">
+          <strong>Established:</strong> ${new Date(company.established).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </div>
+      </section>
+
+      <!-- Vision & Mission -->
+      <section class="company-section">
+        <h3 style="color: var(--brand); margin-bottom: 12px;">Vision & Mission</h3>
+        <div style="display: grid; gap: 16px; margin-bottom: 24px;">
+          <div style="background: var(--panel); padding: 12px; border-radius: 8px;">
+            <strong>Vision:</strong> ${company.vision}
+          </div>
+          <div style="background: var(--panel); padding: 12px; border-radius: 8px;">
+            <strong>Mission:</strong> ${company.mission}
+          </div>
+        </div>
+      </section>
+
+      <!-- Founding Partners -->
+      <section class="company-section">
+        <h3 style="color: var(--brand); margin-bottom: 16px;">Founding Partners</h3>
+        <div style="display: grid; gap: 16px; margin-bottom: 24px;">
+          ${company.founding_partners.map(partner => `
+            <div style="background: var(--panel); padding: 16px; border-radius: 8px;">
+              <h4 style="color: var(--brand); margin-bottom: 8px;">${partner.name}</h4>
+              <p style="margin-bottom: 12px;"><strong>Title:</strong> ${partner.title}</p>
+              ${partner.qualifications ? `<p style="margin-bottom: 12px;"><strong>Qualifications:</strong> ${partner.qualifications}</p>` : ''}
+              
+              ${partner.government_positions && partner.government_positions.length > 0 ? `
+                <div style="margin-bottom: 12px;">
+                  <strong>Government Positions:</strong>
+                  <ul style="margin: 8px 0 0 16px;">
+                    ${partner.government_positions.map(pos => `
+                      <li>${pos.position}${pos.organization ? ` - ${pos.organization}` : ''} (${pos.period})</li>
+                    `).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+              
+              ${partner.international_experience && partner.international_experience.length > 0 ? `
+                <div>
+                  <strong>International Experience:</strong>
+                  <ul style="margin: 8px 0 0 16px;">
+                    ${partner.international_experience.map(exp => `<li>${exp}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
+      <!-- Values -->
+      <section class="company-section">
+        <h3 style="color: var(--brand); margin-bottom: 12px;">Our Values</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px;">
+          ${company.values.map(value => `
+            <div style="background: var(--panel); padding: 12px; border-radius: 8px; text-align: center;">
+              <strong>${value}</strong>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
+      <!-- Practice Areas -->
+      <section class="company-section">
+        <h3 style="color: var(--brand); margin-bottom: 16px;">Areas of Practice</h3>
+        <div style="display: grid; gap: 16px;">
+          ${company.areas_of_practice.map(area => `
+            <div style="background: var(--panel); padding: 16px; border-radius: 8px;">
+              <h4 style="color: var(--brand); margin-bottom: 8px;">${area.name}</h4>
+              <p style="margin-bottom: 12px;">${area.description}</p>
+              
+              ${area.services && area.services.length > 0 ? `
+                <div style="margin-bottom: 12px;">
+                  <strong>Services:</strong>
+                  <ul style="margin: 8px 0 0 16px;">
+                    ${area.services.map(service => `<li>${service}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+              
+              ${area.legislation_covered && area.legislation_covered.length > 0 ? `
+                <div style="margin-bottom: 12px;">
+                  <strong>Legislation Covered:</strong>
+                  <ul style="margin: 8px 0 0 16px;">
+                    ${area.legislation_covered.map(law => `<li>${law}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+              
+              ${area.notable_cases && area.notable_cases.length > 0 ? `
+                <div style="margin-bottom: 12px;">
+                  <strong>Notable Cases:</strong>
+                  <ul style="margin: 8px 0 0 16px;">
+                    ${area.notable_cases.map(case_item => `<li>${case_item}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+              
+              ${area.client_types && area.client_types.length > 0 ? `
+                <div>
+                  <strong>Client Types:</strong>
+                  <ul style="margin: 8px 0 0 16px;">
+                    ${area.client_types.map(client => `<li>${client}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
+      <!-- Pro Bono -->
+      <section class="company-section">
+        <h3 style="color: var(--brand); margin-bottom: 12px;">Pro Bono Services</h3>
+        <div style="background: var(--panel); padding: 16px; border-radius: 8px;">
+          <p style="margin-bottom: 12px;">${company.areas_of_practice.find(area => area.name === 'Pro Bono Services')?.description || ''}</p>
+          <p><strong>Target Groups:</strong> ${company.areas_of_practice.find(area => area.name === 'Pro Bono Services')?.target_groups?.join(', ') || ''}</p>
+        </div>
+      </section>
+    </div>
+  `;
+}
+
 function printSingleEntry(entry) {
   const w = window.open('', '_blank');
   const style = `
@@ -139,11 +279,12 @@ function wireUI() {
     $$('#sidebar .nav-link').forEach(x => x.classList.remove('active'));
     a.classList.add('active');
     const target = a.getAttribute('href');
-    $$('#timeline, #blog').forEach(sec => sec.hidden = true);
+    $$('#timeline, #blog, #company').forEach(sec => sec.hidden = true);
     $(target).hidden = false;
   }));
   $('#timelineSearch')?.addEventListener('input', (e) => doSearch(e.target.value, 'timeline'));
   $('#blogSearch')?.addEventListener('input', (e) => doSearch(e.target.value, 'blog'));
+  $('#companySearch')?.addEventListener('input', (e) => doSearch(e.target.value, 'company'));
   $('#yearNow').textContent = new Date().getFullYear();
 }
 
@@ -155,11 +296,17 @@ function doSearch(q, which) {
       const txt = item.textContent.toLowerCase();
       item.style.display = txt.includes(q) ? '' : 'none';
     });
-  } else {
+  } else if (which === 'blog') {
     const grid = $('#blogGrid');
     $$('.card', grid).forEach(card => {
       const txt = card.textContent.toLowerCase();
       card.style.display = txt.includes(q) ? '' : 'none';
+    });
+  } else if (which === 'company') {
+    const container = $('#companyContent');
+    $$('.company-section', container).forEach(section => {
+      const txt = section.textContent.toLowerCase();
+      section.style.display = txt.includes(q) ? '' : 'none';
     });
   }
 }
@@ -167,6 +314,7 @@ function doSearch(q, which) {
 function refresh() {
   renderTimeline();
   renderBlog();
+  renderCompany();
 }
 
 (async function init(){
