@@ -73,11 +73,22 @@ function renderTimeline() {
         <button class="btn btn-small" data-print>Download PDF</button>
       </div>
     `;
+    
+    // Add click handler for the entire item
+    li.addEventListener('click', (e) => {
+      console.log('Timeline item clicked:', e.target);
+      // Only show modal if not clicking on buttons or links
+      if (!e.target.closest('.btn') && !e.target.closest('a')) {
+        console.log('Showing modal for timeline item:', p.title);
+        showModal(p);
+      }
+    });
+    
+    // Add click handler for print button
     li.querySelector('[data-print]')?.addEventListener('click', (e) => {
       e.stopPropagation();
       printSingleEntry(p);
     });
-    li.addEventListener('click', () => showModal(p));
     list.appendChild(li);
   });
 }
@@ -100,11 +111,22 @@ function renderBlog() {
         <button class="btn btn-small" data-print>Download PDF</button>
       </div>
     `;
+    
+    // Add click handler for the entire card
+    card.addEventListener('click', (e) => {
+      console.log('Blog card clicked:', e.target);
+      // Only show modal if not clicking on buttons or links
+      if (!e.target.closest('.btn') && !e.target.closest('a')) {
+        console.log('Showing modal for blog item:', p.title);
+        showModal(p);
+      }
+    });
+    
+    // Add click handler for print button
     card.querySelector('[data-print]')?.addEventListener('click', (e) => {
       e.stopPropagation();
       printSingleEntry(p);
     });
-    card.addEventListener('click', () => showModal(p));
     grid.appendChild(card);
   });
 }
@@ -280,6 +302,24 @@ function printSingleEntry(entry) {
 function wireUI() {
   $('#printPageBtn')?.addEventListener('click', () => window.print());
   $('#mobileMenuBtn')?.addEventListener('click', toggleMobileMenu);
+  $('#testModalBtn')?.addEventListener('click', () => {
+    console.log('Test modal button clicked');
+    const testEntry = {
+      title: 'Test Entry',
+      category: 'Test',
+      publication_date: '2024-01-01',
+      excerpt: 'This is a test entry to verify the modal functionality.',
+      content: {
+        introduction: 'This is the introduction of the test entry.',
+        main_content: 'This is the main content of the test entry with detailed information.',
+        conclusion: 'This is the conclusion of the test entry.'
+      },
+      sources: [
+        { url: '#', title: 'Test Source' }
+      ]
+    };
+    showModal(testEntry);
+  });
   $('#categoryFilter')?.addEventListener('change', (e) => { state.filters.category = e.target.value; refresh(); });
   $('#yearFilter')?.addEventListener('change', (e) => { state.filters.year = e.target.value; refresh(); });
   $('#clearFiltersBtn')?.addEventListener('click', () => { state.filters = { category: '', year: '' }; $('#categoryFilter').value=''; $('#yearFilter').value=''; refresh(); });
@@ -346,9 +386,15 @@ function refresh() {
 
 // Modal functions
 function showModal(entry) {
+  console.log('showModal called with:', entry);
   const modal = $('#itemModal');
   const title = $('#modalTitle');
   const body = $('#modalBody');
+  
+  if (!modal) {
+    console.error('Modal element not found');
+    return;
+  }
   
   title.textContent = entry.title;
   
@@ -434,6 +480,8 @@ function showModal(entry) {
   body.innerHTML = content;
   modal.style.display = 'flex';
   document.body.style.overflow = 'hidden';
+  
+  console.log('Modal displayed:', modal.style.display);
   
   // Store current entry for PDF printing
   window.currentModalEntry = entry;
