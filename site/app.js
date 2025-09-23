@@ -67,7 +67,7 @@ function renderTimeline() {
     li.innerHTML = `
       <div class="meta"><span class="dot ${dot}"></span><span>${date}</span><span class="badge">${p.category||''}</span></div>
       <div class="title">${p.title}</div>
-      <div class="excerpt">${p.excerpt || ''}</div>
+      <div class="excerpt">${formatMarkdown(p.excerpt || '')}</div>
       <div class="actions-row">
         ${Array.isArray(p.sources) ? p.sources.map(s => `<a class="btn btn-small" href="${s.url}" target="_blank" rel="noopener">Source</a>`).join('') : ''}
         <button class="btn btn-small" data-print>Download PDF</button>
@@ -105,7 +105,7 @@ function renderBlog() {
     card.innerHTML = `
       <div class="meta"><span class="dot ${dot}"></span> <span class="badge">${p.category||''}</span> · <span>${p.publication_date||''}</span></div>
       <h3>${p.title}</h3>
-      <p>${p.excerpt || ''}</p>
+      <p>${formatMarkdown(p.excerpt || '')}</p>
       <div class="actions-row">
         ${Array.isArray(p.sources) ? p.sources.map(s => `<a class="btn btn-small" href="${s.url}" target="_blank" rel="noopener">Source</a>`).join('') : ''}
         <button class="btn btn-small" data-print>Download PDF</button>
@@ -384,6 +384,17 @@ function refresh() {
   renderCompany();
 }
 
+// Helper function to format markdown-like text
+function formatMarkdown(text) {
+  if (!text) return '';
+  
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold text **text** -> <strong>text</strong>
+    .replace(/\*(.*?)\*/g, '<em>$1</em>') // Italic text *text* -> <em>text</em>
+    .replace(/\n/g, '<br/>') // Line breaks
+    .replace(/`(.*?)`/g, '<code>$1</code>'); // Code `text` -> <code>text</code>
+}
+
 // Modal functions
 function showModal(entry) {
   console.log('showModal called with:', entry);
@@ -414,7 +425,7 @@ function showModal(entry) {
     content += `
       <div class="modal-section">
         <h3>Overview</h3>
-        <p>${entry.excerpt || entry.content?.introduction || ''}</p>
+        <p>${formatMarkdown(entry.excerpt || entry.content?.introduction || '')}</p>
       </div>
     `;
   }
@@ -424,7 +435,7 @@ function showModal(entry) {
     content += `
       <div class="modal-section">
         <h3>Details</h3>
-        <p>${entry.content.main_content.replace(/\n/g, '<br/>')}</p>
+        <p>${formatMarkdown(entry.content.main_content)}</p>
       </div>
     `;
   }
@@ -434,7 +445,7 @@ function showModal(entry) {
     content += `
       <div class="modal-section">
         <h3>Conclusion</h3>
-        <p>${entry.content.conclusion}</p>
+        <p>${formatMarkdown(entry.content.conclusion)}</p>
       </div>
     `;
   }
