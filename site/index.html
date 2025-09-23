@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kennedy Ogeto – Legal Timeline & Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <div class="avatar">KO</div>
+          <div>
+            <h1>Kennedy Ogeto</h1>
+            <p class="subtitle">Legal Timeline, Court Appearances & Research Dossier</p>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="printPageBtn" class="btn btn-primary">Download Page as PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+          <a href="#timeline" class="nav-link active">Timeline</a>
+          <a href="#blog" class="nav-link">Blog</a>
+        </nav>
+
+        <div class="filters">
+          <h3>Filters</h3>
+          <label class="filter">
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <label class="filter">
+            <span>Year</span>
+            <select id="yearFilter">
+              <option value="">All</option>
+            </select>
+          </label>
+          <button id="clearFiltersBtn" class="btn btn-secondary btn-small">Clear Filters</button>
+        </div>
+
+        <div class="legend">
+          <h3>Legend</h3>
+          <ul>
+            <li><span class="dot dot-constitutional"></span> Constitutional Law</li>
+            <li><span class="dot dot-election"></span> Election Law</li>
+            <li><span class="dot dot-international"></span> International Law</li>
+            <li><span class="dot dot-investment"></span> Investment/Arbitration</li>
+            <li><span class="dot dot-appointment"></span> Appointments & Roles</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="content">
+        <section id="timeline" class="panel">
+          <div class="panel-header">
+            <h2>Chronological Timeline</h2>
+            <div class="panel-actions">
+              <input id="timelineSearch" class="search" type="search" placeholder="Search timeline..." />
+            </div>
+          </div>
+          <ol id="timelineList" class="timeline"></ol>
+        </section>
+
+        <section id="blog" class="panel" hidden>
+          <div class="panel-header">
+            <h2>Blog</h2>
+            <div class="panel-actions">
+              <input id="blogSearch" class="search" type="search" placeholder="Search blog..." />
+            </div>
+          </div>
+          <div id="blogGrid" class="cards"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>© <span id="yearNow"></span> Ogeto History Docs</div>
+        <div class="small">Data sources include court records, reputable media, and videos referenced per entry.</div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+

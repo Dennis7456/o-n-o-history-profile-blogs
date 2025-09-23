@@ -1,0 +1,75 @@
+:root {
+  --bg: #0b1220;
+  --panel: #121a2b;
+  --card: #0f1626;
+  --text: #e6ebff;
+  --muted: #9bb0d3;
+  --brand: #5b8cff;
+  --accent: #20c997;
+  --border: #1e2a44;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: var(--bg);
+  color: var(--text);
+}
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.site-header { border-bottom: 1px solid var(--border); background: rgba(11,18,32,0.8); position: sticky; top: 0; backdrop-filter: blur(8px); z-index: 10; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 16px 16px; }
+.brand { display: flex; gap: 12px; align-items: center; }
+.brand h1 { margin: 0; font-size: 18px; font-weight: 700; }
+.subtitle { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+.avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--accent)); display: grid; place-items: center; color: white; font-weight: 700; }
+.actions { display: flex; gap: 8px; }
+.btn { border: 1px solid var(--border); background: var(--panel); color: var(--text); padding: 10px 14px; border-radius: 8px; cursor: pointer; }
+.btn:hover { border-color: var(--brand); }
+.btn-primary { background: var(--brand); border-color: var(--brand); color: white; }
+.btn-secondary { background: transparent; }
+.btn-small { padding: 6px 10px; font-size: 12px; }
+
+.layout { display: grid; grid-template-columns: 280px 1fr; gap: 16px; padding: 16px 0 32px; }
+.sidebar { position: sticky; top: 74px; align-self: start; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; height: fit-content; }
+.nav { display: grid; gap: 6px; margin-bottom: 16px; }
+.nav-link { color: var(--text); opacity: 0.9; text-decoration: none; padding: 8px 10px; border-radius: 8px; display: block; }
+.nav-link:hover, .nav-link.active { background: var(--card); }
+.filters h3, .legend h3 { font-size: 12px; color: var(--muted); margin: 12px 0 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+.filter { display: grid; gap: 6px; margin-bottom: 10px; font-size: 14px; }
+select, .search { width: 100%; background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+.legend ul { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 6px; }
+.legend li { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot-constitutional { background: #ff7aa2; }
+.dot-election { background: #ffd166; }
+.dot-international { background: #4dd4ff; }
+.dot-investment { background: #6ee7b7; }
+.dot-appointment { background: #c084fc; }
+
+.content { display: grid; gap: 16px; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; }
+.panel-header { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.timeline { list-style: none; margin: 0; padding: 16px; display: grid; gap: 12px; }
+.timeline-item { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; display: grid; gap: 8px; }
+.timeline-item .meta { display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 12px; }
+.timeline-item .title { font-weight: 600; }
+.link { color: var(--brand); text-decoration: none; }
+.link:hover { text-decoration: underline; }
+.actions-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; padding: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px; display: grid; gap: 8px; }
+.badge { font-size: 11px; color: var(--muted); }
+
+.site-footer { border-top: 1px solid var(--border); margin-top: 24px; }
+.site-footer .container { padding: 16px; display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 12px; }
+
+@media print {
+  .site-header, .sidebar, .panel-actions, .site-footer { display: none !important; }
+  body { background: white; color: #111; }
+  .panel, .card, .timeline-item { border-color: #ccc; }
+  a.link { color: #0645ad; text-decoration: underline; }
+}
+
+
