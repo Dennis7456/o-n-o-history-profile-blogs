@@ -73,7 +73,11 @@ function renderTimeline() {
         <button class="btn btn-small" data-print>Download PDF</button>
       </div>
     `;
-    li.querySelector('[data-print]')?.addEventListener('click', () => printSingleEntry(p));
+    li.querySelector('[data-print]')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      printSingleEntry(p);
+    });
+    li.addEventListener('click', () => showModal(p));
     list.appendChild(li);
   });
 }
@@ -96,7 +100,11 @@ function renderBlog() {
         <button class="btn btn-small" data-print>Download PDF</button>
       </div>
     `;
-    card.querySelector('[data-print]')?.addEventListener('click', () => printSingleEntry(p));
+    card.querySelector('[data-print]')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      printSingleEntry(p);
+    });
+    card.addEventListener('click', () => showModal(p));
     grid.appendChild(card);
   });
 }
@@ -271,6 +279,7 @@ function printSingleEntry(entry) {
 
 function wireUI() {
   $('#printPageBtn')?.addEventListener('click', () => window.print());
+  $('#mobileMenuBtn')?.addEventListener('click', toggleMobileMenu);
   $('#categoryFilter')?.addEventListener('change', (e) => { state.filters.category = e.target.value; refresh(); });
   $('#yearFilter')?.addEventListener('change', (e) => { state.filters.year = e.target.value; refresh(); });
   $('#clearFiltersBtn')?.addEventListener('click', () => { state.filters = { category: '', year: '' }; $('#categoryFilter').value=''; $('#yearFilter').value=''; refresh(); });
@@ -281,11 +290,29 @@ function wireUI() {
     const target = a.getAttribute('href');
     $$('#timeline, #blog, #company').forEach(sec => sec.hidden = true);
     $(target).hidden = false;
+    
+    // Close mobile menu after navigation
+    if (window.innerWidth <= 768) {
+      $('#sidebar').classList.remove('open');
+    }
   }));
   $('#timelineSearch')?.addEventListener('input', (e) => doSearch(e.target.value, 'timeline'));
   $('#blogSearch')?.addEventListener('input', (e) => doSearch(e.target.value, 'blog'));
   $('#companySearch')?.addEventListener('input', (e) => doSearch(e.target.value, 'company'));
   $('#yearNow').textContent = new Date().getFullYear();
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const sidebar = $('#sidebar');
+    const mobileMenuBtn = $('#mobileMenuBtn');
+    
+    if (window.innerWidth <= 768 && 
+        sidebar.classList.contains('open') && 
+        !sidebar.contains(e.target) && 
+        !mobileMenuBtn.contains(e.target)) {
+      sidebar.classList.remove('open');
+    }
+  });
 }
 
 function doSearch(q, which) {
@@ -316,6 +343,126 @@ function refresh() {
   renderBlog();
   renderCompany();
 }
+
+// Modal functions
+function showModal(entry) {
+  const modal = $('#itemModal');
+  const title = $('#modalTitle');
+  const body = $('#modalBody');
+  
+  title.textContent = entry.title;
+  
+  // Build modal content
+  let content = `
+    <div class="modal-section">
+      <div style="color: var(--muted); font-size: 14px; margin-bottom: 16px;">
+        <span style="background: var(--panel); padding: 4px 8px; border-radius: 4px; margin-right: 8px;">${entry.category || 'General'}</span>
+        <span>${entry.publication_date || 'No date'}</span>
+        ${entry.author ? `<span style="margin-left: 8px;">by ${entry.author}</span>` : ''}
+      </div>
+    </div>
+  `;
+  
+  // Add excerpt/introduction
+  if (entry.excerpt || entry.content?.introduction) {
+    content += `
+      <div class="modal-section">
+        <h3>Overview</h3>
+        <p>${entry.excerpt || entry.content?.introduction || ''}</p>
+      </div>
+    `;
+  }
+  
+  // Add main content
+  if (entry.content?.main_content) {
+    content += `
+      <div class="modal-section">
+        <h3>Details</h3>
+        <p>${entry.content.main_content.replace(/\n/g, '<br/>')}</p>
+      </div>
+    `;
+  }
+  
+  // Add conclusion
+  if (entry.content?.conclusion) {
+    content += `
+      <div class="modal-section">
+        <h3>Conclusion</h3>
+        <p>${entry.content.conclusion}</p>
+      </div>
+    `;
+  }
+  
+  // Add metadata if available
+  if (entry.metadata) {
+    content += `
+      <div class="modal-section">
+        <h3>Additional Information</h3>
+        <p><strong>Tags:</strong> ${entry.metadata.tags ? entry.metadata.tags.join(', ') : 'None'}</p>
+        ${entry.metadata.reading_time ? `<p><strong>Reading Time:</strong> ${entry.metadata.reading_time}</p>` : ''}
+        ${entry.metadata.word_count ? `<p><strong>Word Count:</strong> ${entry.metadata.word_count}</p>` : ''}
+      </div>
+    `;
+  }
+  
+  // Add sources
+  if (Array.isArray(entry.sources) && entry.sources.length > 0) {
+    content += `
+      <div class="modal-section">
+        <h3>Sources</h3>
+        <div class="modal-sources">
+          <ul>
+            ${entry.sources.map(s => `<li><a href="${s.url}" target="_blank" rel="noopener">${s.title || s.url}</a></li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    `;
+  }
+  
+  // Add related posts if available
+  if (entry.related_posts && entry.related_posts.length > 0) {
+    content += `
+      <div class="modal-section">
+        <h3>Related Posts</h3>
+        <ul>
+          ${entry.related_posts.map(rp => `<li><a href="#" onclick="showModal(${JSON.stringify(rp).replace(/"/g, '&quot;')}); return false;">${rp.title}</a></li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }
+  
+  body.innerHTML = content;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  
+  // Store current entry for PDF printing
+  window.currentModalEntry = entry;
+}
+
+function closeModal() {
+  const modal = $('#itemModal');
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+  window.currentModalEntry = null;
+}
+
+function printModalContent() {
+  if (window.currentModalEntry) {
+    printSingleEntry(window.currentModalEntry);
+  }
+}
+
+// Mobile menu functions
+function toggleMobileMenu() {
+  const sidebar = $('#sidebar');
+  sidebar.classList.toggle('open');
+}
+
+// Make functions globally available
+window.showModal = showModal;
+window.closeModal = closeModal;
+window.printModalContent = printModalContent;
+window.toggleMobileMenu = toggleMobileMenu;
 
 (async function init(){
   await loadData();
