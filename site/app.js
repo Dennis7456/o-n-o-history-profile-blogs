@@ -57,7 +57,7 @@ function entryMatchesFilters(entry) {
 function renderTimeline() {
   const list = $('#timelineList');
   list.innerHTML = '';
-  const posts = (state.chronology.blog_posts || []).slice().sort((a,b) => (a.publication_date||'').localeCompare(b.publication_date));
+  const posts = (state.chronology.blog_posts || []).slice().sort((a,b) => (b.publication_date||'').localeCompare(a.publication_date));
   posts.forEach(p => {
     if (!entryMatchesFilters(p)) return;
     const li = document.createElement('li');
