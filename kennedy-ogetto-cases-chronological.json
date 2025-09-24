@@ -2,7 +2,7 @@
   "kennedy_ogetto_cases": {
     "metadata": {
       "last_updated": "2024-12-19",
-      "total_cases_found": 10,
+      "total_cases_found": 11,
       "research_scope": "Comprehensive online search including YouTube, news articles, legal databases, and court documents",
       "note": "Extensive information now available about Kennedy Ogeto's distinguished legal career"
     },
@@ -481,6 +481,46 @@
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto argued landmark BBI appeal at Supreme Court, addressing constitutional amendment procedures and presidential immunity.",
           "linkedin_summary": "Kennedy Ogeto's Supreme Court arguments in BBI appeal demonstrate his mastery of constitutional law and strategic legal reasoning."
+        }
+      },
+      {
+        "post_id": "ogetto-icc-muthaura-initial-appearance-2011",
+        "title": "ICC Initial Appearance: Representing Francis Kirimi Muthaura (2011)",
+        "slug": "kennedy-ogetto-icc-muthaura-initial-appearance-2011",
+        "publication_date": "2011-04-08",
+        "last_updated": "2025-01-27",
+        "author": "Kennedy Ogeto",
+        "category": "International Criminal Law",
+        "tags": ["ICC", "International Criminal Court", "Francis Kirimi Muthaura", "Crimes Against Humanity", "Kenya", "Initial Appearance", "Post-Election Violence"],
+        "excerpt": "Kennedy Ogeto appeared as co-counsel for Francis Kirimi Muthaura during the initial appearance hearing at the International Criminal Court on April 8, 2011, marking a significant moment in Kenya's post-election violence accountability process.",
+        "content": {
+          "introduction": "On April 8, 2011, Kennedy Ogeto appeared as **co-counsel** for **Francis Kirimi Muthaura** during the initial appearance hearing at the International Criminal Court (ICC) in The Hague. This hearing was part of the ICC's investigation into the 2007-2008 post-election violence in Kenya, where Muthaura, along with **Uhuru Kenyatta** and **Mohammed Hussein Ali**, faced charges of crimes against humanity.",
+          "main_content": "The hearing was presided over by **Judge Ekaterina Trendafilova** of Pre-Trial Chamber II, with Judges **Hans-Peter Kaul** and **Cuno Tarfusser** also presiding. The case (ICC-01/09-02/11) involved charges of crimes against humanity committed between January 24-31, 2008, including murder, forcible transfer of population, rape, other inhumane acts, and persecution in Nakuru and Naivasha towns.\n\nDuring the hearing, **Karim Khan** served as lead counsel for Muthaura, with Kennedy Ogeto as co-counsel and **Muriuki Mugambi** as legal assistant. The defense team was introduced to the Court, establishing the legal representation structure for the proceedings.\n\nThe initial appearance served three primary purposes under Article 60(1) and Rule 121(1) of the ICC's statutory framework: confirming that the suspects were informed of the crimes alleged against them, ensuring they understood their rights under the Court's statutory documents, and setting the date for the confirmation of charges hearing.\n\nAll three suspects confirmed they had been properly informed of the charges and their rights. The Chamber set **September 21, 2011** as the commencement date for the confirmation of charges hearing, allowing sufficient time for evidence disclosure and defense preparation.\n\nKennedy Ogeto's role in this hearing demonstrated his expertise in **international criminal law** and his ability to navigate complex ICC procedures. His representation of a high-profile suspect in such a significant international case underscored his reputation as a skilled international criminal defense attorney.",
+          "conclusion": "This initial appearance marked a crucial step in the ICC's Kenya investigation, establishing the procedural framework for the subsequent confirmation hearing. Kennedy Ogeto's participation as co-counsel for Francis Kirimi Muthaura represented another significant milestone in his international criminal law practice, building on his previous experience with UNICTR and the Sierra Leone Special Court."
+        },
+        "metadata": {
+          "reading_time": "8 minutes",
+          "word_count": 420,
+          "difficulty": "Intermediate",
+          "case_type": "International Criminal Court - Initial Appearance",
+          "outcome": "Initial appearance completed, confirmation hearing scheduled",
+          "significance": "High - First ICC appearance for Kenya post-election violence case",
+          "legal_implications": "Established procedural framework for ICC Kenya investigation"
+        },
+        "sources": [
+          {
+            "url": "https://www.icc-cpi.int/sites/default/files/Transcripts/CR2011_04211.PDF",
+            "title": "ICC Transcript - Initial Appearance Hearing",
+            "publication": "International Criminal Court",
+            "date": "2011-04-08",
+            "type": "Court Transcript",
+            "case_number": "ICC-01/09-02/11"
+          }
+        ],
+        "related_posts": ["ogetto-icc-case-investigation-2013", "ogetto-unictr-defense-2000s"],
+        "social_sharing": {
+          "twitter_summary": "Kennedy Ogeto represented Francis Kirimi Muthaura at ICC initial appearance hearing in 2011 - a landmark moment in Kenya's accountability process.",
+          "linkedin_summary": "Professional insight into Kennedy Ogeto's representation of Francis Kirimi Muthaura at the International Criminal Court initial appearance hearing"
         }
       }
     ],
