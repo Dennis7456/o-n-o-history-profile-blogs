@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import DatabaseService from '../lib/supabase'
 import Link from 'next/link'
-import Image from 'next/image'
+
 import { 
   Calendar, 
   Award, 
@@ -106,13 +106,10 @@ export default function Home() {
             
             <div className="flex justify-center lg:justify-end">
               <div className="w-80 h-84 rounded-lg overflow-hidden shadow-2xl">
-                <Image
+                <img
                   src="/kennedy-ogeto-profile.png"
                   alt={profile?.full_name || 'Kennedy Ogeto'}
-                  width={320}
-                  height={336}
                   className="w-full h-full object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>
