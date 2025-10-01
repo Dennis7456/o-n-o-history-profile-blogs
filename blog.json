@@ -5,7 +5,7 @@
       "description": "A comprehensive blog documenting the legal career and cases of Kennedy Ogeto",
       "author": "Research Team",
       "last_updated": "2024-12-19",
-      "total_posts": 8
+      "total_posts": 11
     },
     "posts": [
       {
@@ -16,7 +16,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["BBI", "Supreme Court", "Constitutional Law", "Building Bridges Initiative", "Kenya", "Constitutional Amendment"],
+        "tags": [
+          "BBI",
+          "Supreme Court",
+          "Constitutional Law",
+          "Building Bridges Initiative",
+          "Kenya",
+          "Constitutional Amendment"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch?v=o2lW_lb8UNo",
           "alt_text": "Kennedy Ogeto arguing BBI appeal at Supreme Court",
@@ -66,7 +73,13 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Elections & Parties Law",
-        "tags": ["Political Parties Act", "Coalition Political Party", "Public Participation", "Statutory Interpretation", "Kenya"],
+        "tags": [
+          "Political Parties Act",
+          "Coalition Political Party",
+          "Public Participation",
+          "Statutory Interpretation",
+          "Kenya"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch?v=s97k8WxeJmE",
           "alt_text": "SG Ken Ogeto addresses court on Political Parties (Amendment) Act 2021",
@@ -97,7 +110,9 @@
             "description": "Court address by SG Ken Ogeto on Political Parties (Amendment) Act, 2021 challenges"
           }
         ],
-        "related_posts": ["ogetto-bbi-appeal-court-2021-06-29"],
+        "related_posts": [
+          "ogetto-bbi-appeal-court-2021-06-29"
+        ],
         "social_sharing": {
           "twitter_summary": "SG Ken Ogeto defends Political Parties (Amendment) Act, 2021—precision pleading, coalition parties legality, and public participation standards.",
           "linkedin_summary": "Ken Ogeto's submissions on the Political Parties Act amendments emphasize statutory interpretation canons, coalition party architecture, and constitutional compliance."
@@ -116,7 +131,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["BBI", "Court of Appeal", "Constitutional Amendment", "Basic Structure", "IEBC Quorum", "Kenya"],
+        "tags": [
+          "BBI",
+          "Court of Appeal",
+          "Constitutional Amendment",
+          "Basic Structure",
+          "IEBC Quorum",
+          "Kenya"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch?v=of0cFZM9ssw",
           "alt_text": "Court of Appeal BBI hearing featuring Solicitor General Kennedy Ogeto",
@@ -147,7 +169,10 @@
             "description": "News coverage of BBI Court of Appeal hearing featuring SG Kennedy Ogeto and State submissions"
           }
         ],
-        "related_posts": ["ogetto-bbi-case-2020", "ogetto-bbi-supreme-court-appeal-2022"],
+        "related_posts": [
+          "ogetto-bbi-case-2020",
+          "ogetto-bbi-supreme-court-appeal-2022"
+        ],
         "social_sharing": {
           "twitter_summary": "At the BBI appeal, SG Kennedy Ogeto critiques High Court's use of Wikipedia, contests basic structure, and clarifies IEBC quorum.",
           "linkedin_summary": "BBI appeal submissions by SG Kennedy Ogeto challenge judicial importation of the basic structure doctrine and emphasize constitutional procedures for amendments."
@@ -166,7 +191,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Transitional Justice",
-        "tags": ["TJRC", "Senate", "Transitional Justice", "Truth Commission", "Kenya", "Reparations"],
+        "tags": [
+          "TJRC",
+          "Senate",
+          "Transitional Justice",
+          "Truth Commission",
+          "Kenya",
+          "Reparations"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch/SPM89UHb35Y",
           "alt_text": "Kennedy Ogeto at Senate session on TJRC implementation",
@@ -197,7 +229,10 @@
             "description": "Video recording of Senate session on TJRC report implementation"
           }
         ],
-        "related_posts": ["ogetto-senate-ethiopian-airlines-2019", "ogetto-senate-tjrc-reparations-2019"],
+        "related_posts": [
+          "ogetto-senate-ethiopian-airlines-2019",
+          "ogetto-senate-tjrc-reparations-2019"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto participated in Senate session on TJRC implementation, addressing transitional justice challenges.",
           "linkedin_summary": "Kennedy Ogeto's involvement in Senate TJRC deliberations highlights his role in transitional justice matters."
@@ -216,7 +251,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Government Affairs",
-        "tags": ["Ethiopian Airlines", "Senate", "Victims Justice", "Legal Matters", "Kenya", "Bereaved Families"],
+        "tags": [
+          "Ethiopian Airlines",
+          "Senate",
+          "Victims Justice",
+          "Legal Matters",
+          "Kenya",
+          "Bereaved Families"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch/V5GEwgZjlrU",
           "alt_text": "Kennedy Ogeto at Senate session on Ethiopian Airlines crash victims",
@@ -247,7 +289,10 @@
             "description": "Video recording of Senate session on Ethiopian Airlines crash victims and legal matters"
           }
         ],
-        "related_posts": ["ogetto-senate-tjrc-implementation-2019", "ogetto-senate-tjrc-reparations-2019"],
+        "related_posts": [
+          "ogetto-senate-tjrc-implementation-2019",
+          "ogetto-senate-tjrc-reparations-2019"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto participated in Senate session addressing Ethiopian Airlines crash victims' legal challenges.",
           "linkedin_summary": "Kennedy Ogeto's involvement in Senate session on crash victims demonstrates his commitment to victims' justice."
@@ -266,7 +311,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Transitional Justice",
-        "tags": ["TJRC", "Reparations", "Senate", "Victims Justice", "Sexual Violence", "Kenya"],
+        "tags": [
+          "TJRC",
+          "Reparations",
+          "Senate",
+          "Victims Justice",
+          "Sexual Violence",
+          "Kenya"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch?v=5IMt3eth08o",
           "alt_text": "Kennedy Ogeto at Senate session on TJRC reparations",
@@ -297,7 +349,10 @@
             "description": "Video recording of Senate session on TJRC reparations and victims' justice"
           }
         ],
-        "related_posts": ["ogetto-senate-tjrc-implementation-2019", "ogetto-senate-ethiopian-airlines-2019"],
+        "related_posts": [
+          "ogetto-senate-tjrc-implementation-2019",
+          "ogetto-senate-ethiopian-airlines-2019"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto participated in Senate session on TJRC reparations, addressing historical injustices and victims' justice.",
           "linkedin_summary": "Kennedy Ogeto's involvement in Senate TJRC reparations session highlights his commitment to transitional justice."
@@ -316,7 +371,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["NMS", "National Management System", "Constitutional Law", "Government Institutions", "Kenya", "Legal Clarification"],
+        "tags": [
+          "NMS",
+          "National Management System",
+          "Constitutional Law",
+          "Government Institutions",
+          "Kenya",
+          "Legal Clarification"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch?v=ED5jntqRoh0",
           "alt_text": "Kennedy Ogeto clarifying NMS legality",
@@ -347,7 +409,9 @@
             "description": "Video recording of Solicitor General Kennedy Ogeto clarifying the legality of NMS"
           }
         ],
-        "related_posts": ["ogetto-solicitor-general-appointment-challenge-2019"],
+        "related_posts": [
+          "ogetto-solicitor-general-appointment-challenge-2019"
+        ],
         "social_sharing": {
           "twitter_summary": "Solicitor General Kennedy Ogeto clarified that NMS was declared constitutional by the court, contrary to misleading reports.",
           "linkedin_summary": "Kennedy Ogeto's clarification of NMS legality demonstrates his commitment to public legal education and accurate government communications."
@@ -366,7 +430,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Election Law",
-        "tags": ["Election Law", "Supreme Court", "Presidential Election", "Election Offences", "Kenya", "Uhuru Kenyatta"],
+        "tags": [
+          "Election Law",
+          "Supreme Court",
+          "Presidential Election",
+          "Election Offences",
+          "Kenya",
+          "Uhuru Kenyatta"
+        ],
         "featured_image": {
           "url": "https://www.youtube.com/watch?v=P2ZBaoywRtI",
           "alt_text": "Kennedy Ogeto making submission on election offences at Supreme Court",
@@ -397,7 +468,9 @@
             "description": "Video recording of Kennedy Ogeto's Supreme Court submission on election offences"
           }
         ],
-        "related_posts": ["ogetto-presidential-election-petition-2022"],
+        "related_posts": [
+          "ogetto-presidential-election-petition-2022"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto made comprehensive Supreme Court submission defending Uhuru Kenyatta against election offences allegations in 2017 petition.",
           "linkedin_summary": "Kennedy Ogeto's Supreme Court submission on election offences demonstrates his mastery of election law and constitutional advocacy."
@@ -420,7 +493,7 @@
     "navigation": {
       "categories": [
         "Constitutional Law",
-        "International Criminal Law", 
+        "International Criminal Law",
         "Government Appointments",
         "International Investment Law",
         "Election Law"
@@ -445,7 +518,14 @@
     "publication_date": "2011-04-08",
     "author": "Kennedy Ogeto",
     "category": "International Criminal Law",
-    "tags": ["ICC", "International Criminal Court", "Francis Kirimi Muthaura", "Crimes Against Humanity", "Kenya", "Initial Appearance"],
+    "tags": [
+      "ICC",
+      "International Criminal Court",
+      "Francis Kirimi Muthaura",
+      "Crimes Against Humanity",
+      "Kenya",
+      "Initial Appearance"
+    ],
     "excerpt": "Kennedy Ogeto appeared as co-counsel for Francis Kirimi Muthaura during the initial appearance hearing at the International Criminal Court on April 8, 2011, marking a significant moment in Kenya's post-election violence accountability process.",
     "content": {
       "introduction": "On April 8, 2011, Kennedy Ogeto appeared as **co-counsel** for **Francis Kirimi Muthaura** during the initial appearance hearing at the International Criminal Court (ICC) in The Hague. This hearing was part of the ICC's investigation into the 2007-2008 post-election violence in Kenya, where Muthaura, along with **Uhuru Kenyatta** and **Mohammed Hussein Ali**, faced charges of crimes against humanity.",
@@ -456,7 +536,12 @@
       "reading_time": "8 minutes",
       "word_count": "420",
       "difficulty": "Intermediate",
-      "topics": ["International Criminal Court", "Crimes Against Humanity", "Legal Representation", "Kenya Post-Election Violence"]
+      "topics": [
+        "International Criminal Court",
+        "Crimes Against Humanity",
+        "Legal Representation",
+        "Kenya Post-Election Violence"
+      ]
     },
     "sources": [
       {
@@ -483,7 +568,14 @@
     "publication_date": "2013-03-18",
     "author": "Kennedy Ogeto",
     "category": "International Criminal Law",
-    "tags": ["ICC", "Francis Kirimi Muthaura", "Legal Victory", "International Criminal Court", "Kenya", "Post-Election Violence"],
+    "tags": [
+      "ICC",
+      "Francis Kirimi Muthaura",
+      "Legal Victory",
+      "International Criminal Court",
+      "Kenya",
+      "Post-Election Violence"
+    ],
     "excerpt": "Kennedy Ogeto and the defense team representing Francis Kirimi Muthaura achieved a significant legal victory in the ICC case, marking a crucial turning point in Kenya's post-election violence accountability process.",
     "content": {
       "introduction": "In a landmark development for Kenya's international legal representation, **Kennedy Ogeto** and the defense team representing **Francis Kirimi Muthaura** scored a key victory in the International Criminal Court case related to the 2007-2008 post-election violence. This victory represented a significant milestone in the defense strategy and demonstrated the effectiveness of Kenyan legal expertise in international criminal proceedings.",
@@ -494,7 +586,12 @@
       "reading_time": "6 minutes",
       "word_count": "380",
       "difficulty": "Intermediate",
-      "topics": ["International Criminal Court", "Legal Victory", "Defense Strategy", "Kenya Legal Profession"]
+      "topics": [
+        "International Criminal Court",
+        "Legal Victory",
+        "Defense Strategy",
+        "Kenya Legal Profession"
+      ]
     },
     "sources": [
       {
@@ -514,5 +611,175 @@
       "linkedin": "Professional achievement: Kennedy Ogeto's defense team achieves significant victory in ICC case, showcasing Kenya's legal capabilities on the international stage"
     },
     "short_version": "Kennedy Ogeto and the defense team representing Francis Muthaura achieved a significant legal victory in the ICC case, demonstrating Kenyan legal expertise in international criminal proceedings."
+  },
+  {
+    "post_id": "ogetto-international-arbitrations-victories-2018-2020",
+    "title": "Kennedy Ogeto's Major International Arbitration Victories Save Kenya Billions",
+    "slug": "kennedy-ogetto-international-arbitration-victories",
+    "publication_date": "2020-12-31",
+    "last_updated": "2024-12-19",
+    "author": "Research Team",
+    "category": "International Investment Law",
+    "tags": [
+      "ICSID",
+      "LCIA",
+      "ICC Arbitration",
+      "International Investment",
+      "Kenya",
+      "Legal Victories",
+      "Arbitration Defense"
+    ],
+    "featured_image": {
+      "url": "https://www.statelaw.go.ke/civil-litigation-services/",
+      "alt_text": "Kennedy Ogeto's international arbitration victories",
+      "caption": "Major arbitration victories by Kennedy Ogeto's team saving Kenya billions in international claims",
+      "type": "Government Report"
+    },
+    "excerpt": "As Solicitor General, Kennedy Ogeto led Kenya's defense in multiple high-stakes international arbitrations, achieving remarkable victories that saved the country over KSh 270 billion in potential claims.",
+    "content": {
+      "introduction": "During his tenure as Solicitor General (2018-2022), Kennedy Ogeto spearheaded Kenya's defense in several major international arbitration cases, achieving unprecedented success in protecting the country's financial interests. His strategic legal approach and expertise in international investment law resulted in savings of over **KSh 270 billion** to the Kenyan exchequer.",
+      "main_content": "**Cortec ICSID Arbitration**: Ogeto's team successfully defended against a massive **USD 2 billion claim** (approximately KSh 200 billion), with Kenya prevailing totally. This represented the largest arbitration victory in Kenya's history.\n\n**Kinangop ICC Arbitration**: The defense team knocked off a **USD 310 million claim** entirely, saving approximately **KSh 31 billion** for the taxpayer.\n\n**KETRACO LCIA Arbitration**: In this complex energy sector dispute, Kenya successfully reduced a **Euro 55 million claim** by over **Euro 37 million plus interest**, representing savings of approximately **KSh 4.18 billion**.\n\n**GDC LCIA Arbitration**: The team reduced a **USD 2.7 million claim** by **USD 2.5 million**, saving approximately **KSh 250 million**.\n\n**WalAm Energy ICSID Arbitration**: Perhaps the most significant victory, the **USD 396 million claim** was dismissed entirely, with the claimant ordered to bear all legal costs. This represented savings of approximately **KSh 37 billion**.\n\nThese victories demonstrated Ogeto's mastery of international arbitration procedures, investment treaty interpretation, and his ability to assemble and lead world-class legal teams in complex cross-border disputes.",
+      "conclusion": "Kennedy Ogeto's track record in international arbitrations represents one of the most successful periods in Kenya's legal defense history. His strategic approach, deep understanding of international investment law, and ability to effectively counter complex claims saved the Kenyan taxpayer hundreds of billions of shillings while establishing important precedents for future investment disputes."
+    },
+    "metadata": {
+      "reading_time": "6 minutes",
+      "word_count": 420,
+      "case_type": "International Investment Arbitrations - Multiple Cases",
+      "outcome": "Multiple total victories saving over KSh 270 billion",
+      "significance": "High - Historic arbitration defense record",
+      "legal_implications": "Established Kenya as formidable defender in international investment disputes"
+    },
+    "sources": [
+      {
+        "url": "https://www.statelaw.go.ke/civil-litigation-services/",
+        "title": "Civil Litigation Services - International Arbitrations",
+        "publication": "State Law Office",
+        "date": "2020-12-31",
+        "type": "Government Report",
+        "description": "Official report on international arbitration victories during Ogeto's tenure"
+      }
+    ],
+    "related_posts": [
+      "ogetto-walam-energy-case-2020",
+      "ogetto-solicitor-general-appointment-2018"
+    ],
+    "social_sharing": {
+      "twitter_summary": "Kennedy Ogeto led Kenya to historic arbitration victories, saving over KSh 270 billion in international investment disputes.",
+      "linkedin_summary": "Remarkable legal achievement: Kennedy Ogeto's international arbitration defense saved Kenya hundreds of billions in potential claims."
+    },
+    "short_version": {
+      "title": "International Arbitration Victories - Key Stats",
+      "content": "SG Kennedy Ogeto led Kenya's defense in major international arbitrations: Cortec (USD 2B claim defeated), Kinangop (USD 310M defeated), KETRACO (Euro 37M+ reduced), GDC (USD 2.5M reduced), WalAm Energy (USD 396M defeated). Total savings: over KSh 270 billion to Kenyan taxpayers.",
+      "word_count": 95
+    }
+  },
+  {
+    "post_id": "ogetto-muthaura-icc-defense-strategy-2012",
+    "title": "13 May 2012 – Muthaura's Lawyers Score Key Victory in ICC Case",
+    "slug": "kennedy-ogetto-muthaura-icc-defense-victory",
+    "publication_date": "2012-05-13",
+    "last_updated": "2024-12-19",
+    "author": "Research Team",
+    "category": "International Criminal Court",
+    "tags": [
+      "ICC",
+      "Francis Muthaura",
+      "Defense Strategy",
+      "International Criminal Law",
+      "Kenya",
+      "Legal Victory"
+    ],
+    "featured_image": {
+      "url": "https://nation.africa/kenya/news/politics/muthaura-s-lawyers-score-key-victory-in-icc-case-811718",
+      "alt_text": "Muthaura's defense team celebrates ICC victory",
+      "caption": "Key procedural victory for Francis Muthaura's defense team at the International Criminal Court",
+      "type": "News Article"
+    },
+    "excerpt": "Kennedy Ogeto, as part of Francis Muthaura's defense team, achieved a significant procedural victory at the International Criminal Court, demonstrating strategic legal expertise in international criminal proceedings.",
+    "content": {
+      "introduction": "On May 13, 2012, the defense team for **Francis Kirimi Muthaura**, including Kennedy Ogeto as co-counsel, scored a crucial victory at the International Criminal Court. This victory represented a significant milestone in the ICC's Kenya cases and demonstrated the effectiveness of the defense strategy employed by Ogeto and his colleagues.",
+      "main_content": "The victory came during a critical phase of the ICC proceedings when the defense team successfully challenged key aspects of the prosecution's case. As co-counsel for Muthaura, Kennedy Ogeto played a vital role in developing and implementing the legal strategy that led to this important procedural win.\n\nThe defense team's success was particularly significant given the high-profile nature of the case and the complex legal issues involved. The victory demonstrated Ogeto's ability to navigate the intricate procedures of international criminal law and his skill in identifying weaknesses in the prosecution's arguments.\n\nThis procedural victory was part of a broader defense strategy that would eventually lead to the collapse of the charges against Muthaura. The success highlighted the importance of meticulous preparation and strategic thinking in international criminal defense work.\n\nThe victory also reinforced Ogeto's reputation as a formidable international criminal defense lawyer, building on his previous successes at UNICTR and the Sierra Leone Special Court.",
+      "conclusion": "The May 2012 victory in the Muthaura ICC case represented another significant achievement in Kennedy Ogeto's international criminal law career. His contribution to the defense team's success demonstrated his continued excellence in high-stakes international legal proceedings and his ability to achieve favorable outcomes for his clients in the world's most prestigious criminal court."
+    },
+    "metadata": {
+      "reading_time": "4 minutes",
+      "word_count": 380,
+      "case_type": "International Criminal Court - Defense Victory",
+      "outcome": "Key procedural victory for defense",
+      "significance": "High - Strategic victory in high-profile ICC case",
+      "legal_implications": "Demonstrated effectiveness of defense strategy in international criminal proceedings"
+    },
+    "sources": [
+      {
+        "url": "https://nation.africa/kenya/news/politics/muthaura-s-lawyers-score-key-victory-in-icc-case-811718",
+        "title": "Muthaura's lawyers score key victory in ICC case",
+        "publication": "Daily Nation",
+        "date": "2012-05-13",
+        "type": "News Article",
+        "description": "Report on significant procedural victory for Muthaura's defense team"
+      }
+    ],
+    "related_posts": [
+      "ogetto-icc-muthaura-initial-appearance-2011",
+      "ogetto-icc-case-involvement-2013"
+    ],
+    "social_sharing": {
+      "twitter_summary": "Kennedy Ogeto helped secure key ICC victory for Francis Muthaura's defense team in May 2012.",
+      "linkedin_summary": "Strategic legal victory: Kennedy Ogeto's role in Muthaura's ICC defense team achieves significant procedural win."
+    }
+  },
+  {
+    "post_id": "ogetto-ocampo-probe-request-2018",
+    "title": "7 December 2018 – Kenya Wants Luis Ocampo Probed On Cases Against Six",
+    "slug": "kennedy-ogetto-ocampo-probe-request",
+    "publication_date": "2018-12-07",
+    "last_updated": "2024-12-19",
+    "author": "Research Team",
+    "category": "International Criminal Court",
+    "tags": [
+      "ICC",
+      "Luis Moreno-Ocampo",
+      "Kenya Cases",
+      "Prosecutorial Misconduct",
+      "International Law"
+    ],
+    "featured_image": {
+      "url": "https://www.nation.co.ke/news/kenya-wants-luis-ocampo-probed-cases-against-six",
+      "alt_text": "Luis Moreno-Ocampo ICC prosecutor",
+      "caption": "Former ICC Prosecutor Luis Moreno-Ocampo faces calls for investigation over Kenya cases",
+      "type": "News Article"
+    },
+    "excerpt": "As Solicitor General, Kennedy Ogeto was involved in Kenya's formal request for an investigation into former ICC Prosecutor Luis Moreno-Ocampo's handling of the Kenya cases, citing concerns about prosecutorial conduct.",
+    "content": {
+      "introduction": "On December 7, 2018, Kenya formally requested an investigation into former ICC Prosecutor **Luis Moreno-Ocampo's** conduct in handling the Kenya cases. As Solicitor General, Kennedy Ogeto played a key role in formulating Kenya's position on what the government viewed as prosecutorial misconduct that had undermined the integrity of the ICC proceedings.",
+      "main_content": "The request for investigation centered on allegations that Ocampo had mishandled the Kenya cases, including the charges against the 'Ocampo Six' - prominent Kenyan political figures who were initially charged in connection with the 2007-2008 post-election violence.\n\nAs Solicitor General, Ogeto was instrumental in developing Kenya's legal arguments challenging Ocampo's prosecutorial decisions and methods. The government's position was that Ocampo's approach had been flawed from the outset and had resulted in cases that were ultimately unsustainable.\n\nThe call for investigation reflected Kenya's broader concerns about the ICC's handling of the situation and represented a significant diplomatic and legal challenge to the Court's credibility. Ogeto's involvement demonstrated his continued engagement with ICC-related matters even after the conclusion of the main cases.\n\nThis initiative was part of Kenya's broader strategy to address what it viewed as injustices in the ICC process and to seek accountability for prosecutorial decisions that had significant political and social implications for the country.",
+      "conclusion": "Kennedy Ogeto's role in Kenya's call for an investigation into Luis Moreno-Ocampo demonstrated his continued involvement in high-level international legal and diplomatic matters. His work on this issue reflected his deep understanding of international criminal law and his commitment to ensuring accountability in international judicial processes."
+    },
+    "metadata": {
+      "reading_time": "4 minutes",
+      "word_count": 350,
+      "case_type": "International Criminal Court - Prosecutorial Accountability",
+      "outcome": "Formal request for investigation submitted",
+      "significance": "High - Challenge to ICC prosecutorial conduct",
+      "legal_implications": "Raised questions about prosecutorial accountability in international criminal law"
+    },
+    "sources": [
+      {
+        "url": "https://www.nation.co.ke/news/kenya-wants-luis-ocampo-probed-cases-against-six",
+        "title": "Kenya Wants Luis Ocampo Probed On Cases Against Six",
+        "publication": "Daily Nation",
+        "date": "2018-12-07",
+        "type": "News Article",
+        "description": "Report on Kenya's request for investigation into former ICC prosecutor"
+      }
+    ],
+    "related_posts": [
+      "ogetto-icc-case-involvement-2013",
+      "ogetto-solicitor-general-appointment-2018"
+    ],
+    "social_sharing": {
+      "twitter_summary": "SG Kennedy Ogeto involved in Kenya's call for investigation into former ICC Prosecutor Luis Moreno-Ocampo.",
+      "linkedin_summary": "Kennedy Ogeto's role in challenging ICC prosecutorial conduct demonstrates his expertise in international criminal law accountability."
+    }
   }
 }
