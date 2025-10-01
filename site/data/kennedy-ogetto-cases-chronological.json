@@ -1,10 +1,11 @@
 {
   "kennedy_ogetto_cases": {
     "metadata": {
-      "last_updated": "2024-12-19",
+      "last_updated": "2025-10-01",
       "total_cases_found": 15,
       "research_scope": "Comprehensive online search including YouTube, news articles, legal databases, and court documents",
-      "note": "Extensive information now available about Kennedy Ogeto's distinguished legal career"
+      "note": "Extensive information now available about Kennedy Ogeto's distinguished legal career",
+      "total_timeline_entries": 2
     },
     "personal_profile": {
       "full_name": "Kennedy Ogeto",
@@ -39,7 +40,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Election Law",
-        "tags": ["Election Law", "Supreme Court", "Presidential Election", "Election Offences", "Kenya", "Uhuru Kenyatta"],
+        "tags": [
+          "Election Law",
+          "Supreme Court",
+          "Presidential Election",
+          "Election Offences",
+          "Kenya",
+          "Uhuru Kenyatta"
+        ],
         "excerpt": "Kennedy Ogeto appeared before the Supreme Court as Uhuru Kenyatta's lawyer, making comprehensive submissions on election offences allegations in the 2017 presidential election petition.",
         "content": {
           "introduction": "On 16 November 2017, Kennedy Ogeto appeared before the Supreme Court of Kenya as legal counsel for the third respondent (President Uhuru Kenyatta) in the landmark presidential election petition. His submission focused on addressing allegations of election offences made by the petitioners in Petition Number 4, which claimed the election was marred by intimidation, violence, improper influence, and misuse of public resources.",
@@ -63,7 +71,9 @@
             "type": "Video Recording"
           }
         ],
-        "related_posts": ["ogetto-presidential-election-petition-2022"]
+        "related_posts": [
+          "ogetto-presidential-election-petition-2022"
+        ]
       },
       {
         "post_id": "ogetto-unictr-defense-2000s",
@@ -73,7 +83,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Criminal Law",
-        "tags": ["UNICTR", "Rwanda", "Genocide", "International Law", "Defense Counsel", "UN"],
+        "tags": [
+          "UNICTR",
+          "Rwanda",
+          "Genocide",
+          "International Law",
+          "Defense Counsel",
+          "UN"
+        ],
         "excerpt": "Kennedy Ogeto's distinguished international legal career began as lead defense counsel at the United Nations International Criminal Tribunal for Rwanda, representing individuals accused of crimes related to the 1994 genocide.",
         "content": {
           "introduction": "Kennedy Ogeto's remarkable international legal career began in the early 2000s when he served as the lead defense counsel for Rwanda at the United Nations International Criminal Tribunal for Rwanda (UNICTR) in Arusha, Tanzania. This role placed him at the forefront of international criminal law, representing individuals accused of crimes related to the 1994 Rwandan genocide.",
@@ -97,7 +114,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-sierra-leone-defense-2000s", "ogetto-icc-case-involvement-2013"],
+        "related_posts": [
+          "ogetto-sierra-leone-defense-2000s",
+          "ogetto-icc-case-involvement-2013"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto's international legal career began as lead defense counsel at UNICTR, handling genocide cases in Rwanda.",
           "linkedin_summary": "Kennedy Ogeto established his international legal expertise as lead defense counsel at the UN International Criminal Tribunal for Rwanda."
@@ -111,7 +131,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Criminal Law",
-        "tags": ["Sierra Leone", "UN Special Court", "RUF", "Civil War", "International Law", "Defense Counsel"],
+        "tags": [
+          "Sierra Leone",
+          "UN Special Court",
+          "RUF",
+          "Civil War",
+          "International Law",
+          "Defense Counsel"
+        ],
         "excerpt": "Building on his UNICTR experience, Kennedy Ogeto co-led the defense for a former Revolutionary United Front commander at the UN Special Court for Sierra Leone, handling complex cases related to the country's civil war.",
         "content": {
           "introduction": "Following his success at UNICTR, Kennedy Ogeto continued to build his international criminal law expertise by co-leading the defense for a former Revolutionary United Front (RUF) commander at the United Nations Special Court for Sierra Leone. This role further established his reputation as a skilled international defense counsel.",
@@ -135,7 +162,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-unictr-defense-2000s", "ogetto-icc-case-involvement-2013"],
+        "related_posts": [
+          "ogetto-unictr-defense-2000s",
+          "ogetto-icc-case-involvement-2013"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto co-led defense at UN Special Court for Sierra Leone, handling complex war crimes cases.",
           "linkedin_summary": "Kennedy Ogeto's international legal expertise expanded through co-leading defense at the UN Special Court for Sierra Leone."
@@ -149,7 +179,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Criminal Court",
-        "tags": ["ICC", "Uhuru Kenyatta", "International Law", "Kenya", "Legal Representation", "Witness Protection"],
+        "tags": [
+          "ICC",
+          "Uhuru Kenyatta",
+          "International Law",
+          "Kenya",
+          "Legal Representation",
+          "Witness Protection"
+        ],
         "excerpt": "Newly discovered ICC documents reveal Kennedy Ogeto's significant involvement in President Uhuru Kenyatta's ICC case, serving as a legal representative and handling sensitive witness-related matters.",
         "content": {
           "introduction": "In a significant discovery that corrects previous research findings, newly uncovered ICC documents reveal that Mr. Kennedy Ogeto was indeed involved in President Uhuru Kenyatta's International Criminal Court case. The documents, dated August 13, 2013, show Ogeto's active participation in the legal proceedings, contradicting earlier assumptions about his non-involvement in the ICC case.",
@@ -174,7 +211,10 @@
             "case_number": "ICC-01/09-02/11"
           }
         ],
-        "related_posts": ["ogetto-sierra-leone-defense-2000s", "ogetto-solicitor-general-appointment-2018"],
+        "related_posts": [
+          "ogetto-sierra-leone-defense-2000s",
+          "ogetto-solicitor-general-appointment-2018"
+        ],
         "social_sharing": {
           "twitter_summary": "BREAKING: Kennedy Ogeto's involvement in Uhuru Kenyatta's ICC case revealed through newly discovered court documents.",
           "linkedin_summary": "Significant discovery: Kennedy Ogeto served as legal representative in President Uhuru Kenyatta's ICC case, demonstrating expertise in international law."
@@ -188,7 +228,13 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Government Appointments",
-        "tags": ["Kenya", "Solicitor General", "Government", "Legal", "Uhuru Kenyatta"],
+        "tags": [
+          "Kenya",
+          "Solicitor General",
+          "Government",
+          "Legal",
+          "Uhuru Kenyatta"
+        ],
         "excerpt": "The National Assembly of Kenya has approved President Uhuru Kenyatta's nominee, Kennedy Ogeto, as the new Solicitor General, marking a significant milestone in Kenya's legal landscape.",
         "content": {
           "introduction": "In a landmark decision on March 14, 2018, the National Assembly of Kenya gave its approval to President Uhuru Kenyatta's nominee, Kennedy Ogeto, to serve as the new Solicitor General of Kenya. This appointment represents a crucial moment in Kenya's legal governance, bringing aboard a seasoned legal professional with nearly three decades of experience.",
@@ -212,7 +258,9 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-icc-case-involvement-2013"],
+        "related_posts": [
+          "ogetto-icc-case-involvement-2013"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto appointed as Kenya's new Solicitor General, bringing 27 years of legal experience and a commitment to reducing government litigation.",
           "linkedin_summary": "A significant development in Kenya's legal governance as Kennedy Ogeto takes on the role of Solicitor General, promising enhanced legal coordination and accountability."
@@ -226,7 +274,13 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["BBI", "Constitutional Law", "Government Representation", "Kenya", "Legal Counsel"],
+        "tags": [
+          "BBI",
+          "Constitutional Law",
+          "Government Representation",
+          "Kenya",
+          "Legal Counsel"
+        ],
         "excerpt": "As Solicitor General, Kennedy Ogeto represented the government in the high-profile Building Bridges Initiative case, demonstrating his expertise in constitutional law and government legal representation.",
         "content": {
           "introduction": "In 2020, Kennedy Ogeto, in his capacity as Solicitor General of Kenya, took on one of the most significant constitutional law cases in recent Kenyan history - representing the government in the Building Bridges Initiative (BBI) case. This case involved complex constitutional questions about the process of amending Kenya's constitution.",
@@ -250,7 +304,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-solicitor-general-appointment-2018", "ogetto-walam-energy-case-2020"],
+        "related_posts": [
+          "ogetto-solicitor-general-appointment-2018",
+          "ogetto-walam-energy-case-2020"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto represented the government in the high-profile Building Bridges Initiative constitutional case.",
           "linkedin_summary": "Kennedy Ogeto's constitutional law expertise demonstrated through government representation in the BBI case."
@@ -264,7 +321,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["NMS", "National Management System", "Constitutional Law", "Government Institutions", "Kenya", "Legal Clarification"],
+        "tags": [
+          "NMS",
+          "National Management System",
+          "Constitutional Law",
+          "Government Institutions",
+          "Kenya",
+          "Legal Clarification"
+        ],
         "excerpt": "Solicitor General Kennedy Ogeto addressed public concerns about the National Management System (NMS) legality, clarifying that the court had declared it constitutional.",
         "content": {
           "introduction": "On 11 June 2021, Solicitor General Kennedy Ogeto issued a public statement clarifying the legal status of the National Management System (NMS) after reports suggested a court had declared it unconstitutional.",
@@ -288,7 +352,9 @@
             "type": "Video Recording"
           }
         ],
-        "related_posts": ["ogetto-solicitor-general-appointment-2018"]
+        "related_posts": [
+          "ogetto-solicitor-general-appointment-2018"
+        ]
       },
       {
         "post_id": "ogetto-walam-energy-case-2020",
@@ -298,7 +364,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Investment Law",
-        "tags": ["ICSID", "Investment Law", "International Arbitration", "Kenya", "Energy", "Legal Victory"],
+        "tags": [
+          "ICSID",
+          "Investment Law",
+          "International Arbitration",
+          "Kenya",
+          "Energy",
+          "Legal Victory"
+        ],
         "excerpt": "Kennedy Ogeto led Kenya's successful defense against a $370 million claim by WalAm Energy Inc. at the International Centre for Settlement of Investment Disputes, demonstrating his expertise in international investment law.",
         "content": {
           "introduction": "In July 2020, Kennedy Ogeto achieved a significant legal victory for Kenya by successfully defending the country against a $370 million claim by WalAm Energy Inc. at the International Centre for Settlement of Investment Disputes (ICSID). This case demonstrated Ogeto's expertise in international investment law and his ability to represent Kenya effectively in complex international arbitration proceedings.",
@@ -322,7 +395,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-bbi-case-2020", "ogetto-ruto-legal-adviser-2023"],
+        "related_posts": [
+          "ogetto-bbi-case-2020",
+          "ogetto-ruto-legal-adviser-2023"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto successfully defended Kenya against $370M WalAm Energy claim at ICSID.",
           "linkedin_summary": "Major legal victory: Kennedy Ogeto led Kenya's successful defense in $370M international investment arbitration case."
@@ -336,7 +412,13 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Government Appointments",
-        "tags": ["William Ruto", "Legal Adviser", "Government", "Kenya", "Presidential Counsel"],
+        "tags": [
+          "William Ruto",
+          "Legal Adviser",
+          "Government",
+          "Kenya",
+          "Presidential Counsel"
+        ],
         "excerpt": "Following his distinguished service as Solicitor General, Kennedy Ogeto was appointed as Legal Adviser to President William Ruto, continuing his role in providing legal counsel at the highest levels of government.",
         "content": {
           "introduction": "In March 2023, Kennedy Ogeto reached another milestone in his distinguished legal career when he was appointed as Legal Adviser to President William Ruto. This appointment followed his successful tenure as Solicitor General and demonstrated the continued trust placed in his legal expertise at the highest levels of Kenyan government.",
@@ -360,7 +442,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-walam-energy-case-2020", "ogetto-solicitor-general-appointment-2018"],
+        "related_posts": [
+          "ogetto-walam-energy-case-2020",
+          "ogetto-solicitor-general-appointment-2018"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto appointed as Legal Adviser to President William Ruto, continuing his distinguished government service.",
           "linkedin_summary": "Kennedy Ogeto reaches the pinnacle of his legal career as Legal Adviser to President William Ruto."
@@ -374,7 +459,15 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["Presidential Election", "Supreme Court", "Election Petition", "Constitutional Law", "Kenya", "Raila Odinga", "William Ruto"],
+        "tags": [
+          "Presidential Election",
+          "Supreme Court",
+          "Election Petition",
+          "Constitutional Law",
+          "Kenya",
+          "Raila Odinga",
+          "William Ruto"
+        ],
         "excerpt": "Kennedy Ogeto was named in a Supreme Court presidential election petition as part of a National Security Advisory Committee delegation allegedly involved in election interference during the 2022 presidential election.",
         "content": {
           "introduction": "In a dramatic development during the 2022 presidential election petition, Kennedy Ogeto, then serving as Solicitor General, was named in Supreme Court proceedings as part of a National Security Advisory Committee (NSAC) delegation allegedly involved in election interference. The case, Presidential Election Petition No. E005 of 2022, involved serious allegations about attempts to subvert the will of the people during the presidential election.",
@@ -399,7 +492,10 @@
             "case_number": "E005 of 2022"
           }
         ],
-        "related_posts": ["ogetto-ruto-legal-adviser-2023", "ogetto-bbi-case-2020"],
+        "related_posts": [
+          "ogetto-ruto-legal-adviser-2023",
+          "ogetto-bbi-case-2020"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto named in Supreme Court presidential election petition involving serious allegations of election interference.",
           "linkedin_summary": "Kennedy Ogeto's involvement in 2022 presidential election controversy highlights complex intersection of law and politics."
@@ -413,7 +509,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["Solicitor General", "Constitutional Law", "Public Service", "Appointment Challenge", "Kenya", "Employment Court"],
+        "tags": [
+          "Solicitor General",
+          "Constitutional Law",
+          "Public Service",
+          "Appointment Challenge",
+          "Kenya",
+          "Employment Court"
+        ],
         "excerpt": "Kennedy Ogeto's appointment as Solicitor General was challenged in the Employment and Labour Relations Court by activist Okiya Omtatah Okoiti, who argued the appointment violated constitutional requirements for competitive recruitment.",
         "content": {
           "introduction": "In a significant constitutional law challenge, Kennedy Ogeto's appointment as Solicitor General was contested in the Employment and Labour Relations Court in 2019. The case, filed by activist Okiya Omtatah Okoiti, raised fundamental questions about the constitutionality of presidential appointments to senior government positions and the role of the Public Service Commission in the recruitment process.",
@@ -438,7 +541,10 @@
             "case_number": "Petition 19 of 2018"
           }
         ],
-        "related_posts": ["ogetto-solicitor-general-appointment-2018", "ogetto-presidential-election-petition-2022"],
+        "related_posts": [
+          "ogetto-solicitor-general-appointment-2018",
+          "ogetto-presidential-election-petition-2022"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto's Solicitor General appointment challenged in court for alleged violation of constitutional recruitment requirements.",
           "linkedin_summary": "Constitutional law challenge to Kennedy Ogeto's Solicitor General appointment highlights tension between presidential powers and constitutional requirements."
@@ -452,7 +558,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "Constitutional Law",
-        "tags": ["BBI", "Supreme Court", "Constitutional Law", "Building Bridges Initiative", "Kenya", "Constitutional Amendment"],
+        "tags": [
+          "BBI",
+          "Supreme Court",
+          "Constitutional Law",
+          "Building Bridges Initiative",
+          "Kenya",
+          "Constitutional Amendment"
+        ],
         "excerpt": "Solicitor General Kennedy Ogeto appeared before the Supreme Court in the landmark BBI appeal, delivering crucial arguments on constitutional amendment procedures and presidential immunity.",
         "content": {
           "introduction": "On January 18, 2022, Solicitor General Kennedy Ogeto appeared before the Supreme Court of Kenya in one of the most consequential constitutional law cases in the country's history - the Building Bridges Initiative (BBI) appeal. Representing the Attorney General, Ogeto delivered comprehensive submissions on fundamental constitutional questions that would shape Kenya's constitutional jurisprudence for years to come.",
@@ -477,7 +590,10 @@
             "description": "Video recording of Kennedy Ogeto's Supreme Court arguments in BBI appeal"
           }
         ],
-        "related_posts": ["ogetto-bbi-case-2020", "ogetto-solicitor-general-appointment-challenge-2019"],
+        "related_posts": [
+          "ogetto-bbi-case-2020",
+          "ogetto-solicitor-general-appointment-challenge-2019"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto argued landmark BBI appeal at Supreme Court, addressing constitutional amendment procedures and presidential immunity.",
           "linkedin_summary": "Kennedy Ogeto's Supreme Court arguments in BBI appeal demonstrate his mastery of constitutional law and strategic legal reasoning."
@@ -491,7 +607,15 @@
         "last_updated": "2025-01-27",
         "author": "Kennedy Ogeto",
         "category": "International Criminal Law",
-        "tags": ["ICC", "International Criminal Court", "Francis Kirimi Muthaura", "Crimes Against Humanity", "Kenya", "Initial Appearance", "Post-Election Violence"],
+        "tags": [
+          "ICC",
+          "International Criminal Court",
+          "Francis Kirimi Muthaura",
+          "Crimes Against Humanity",
+          "Kenya",
+          "Initial Appearance",
+          "Post-Election Violence"
+        ],
         "excerpt": "Kennedy Ogeto appeared as co-counsel for Francis Kirimi Muthaura during the initial appearance hearing at the International Criminal Court on April 8, 2011, marking a significant moment in Kenya's post-election violence accountability process.",
         "content": {
           "introduction": "On April 8, 2011, Kennedy Ogeto appeared as **co-counsel** for **Francis Kirimi Muthaura** during the initial appearance hearing at the International Criminal Court (ICC) in The Hague. This hearing was part of the ICC's investigation into the 2007-2008 post-election violence in Kenya, where Muthaura, along with **Uhuru Kenyatta** and **Mohammed Hussein Ali**, faced charges of crimes against humanity.",
@@ -517,7 +641,10 @@
             "case_number": "ICC-01/09-02/11"
           }
         ],
-        "related_posts": ["ogetto-icc-case-investigation-2013", "ogetto-unictr-defense-2000s"],
+        "related_posts": [
+          "ogetto-icc-case-investigation-2013",
+          "ogetto-unictr-defense-2000s"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto represented Francis Kirimi Muthaura at ICC initial appearance hearing in 2011 - a landmark moment in Kenya's accountability process.",
           "linkedin_summary": "Professional insight into Kennedy Ogeto's representation of Francis Kirimi Muthaura at the International Criminal Court initial appearance hearing"
@@ -531,7 +658,14 @@
         "last_updated": "2025-01-27",
         "author": "Kennedy Ogeto",
         "category": "International Criminal Law",
-        "tags": ["ICC", "Francis Kirimi Muthaura", "Legal Victory", "International Criminal Court", "Kenya", "Post-Election Violence"],
+        "tags": [
+          "ICC",
+          "Francis Kirimi Muthaura",
+          "Legal Victory",
+          "International Criminal Court",
+          "Kenya",
+          "Post-Election Violence"
+        ],
         "excerpt": "Kennedy Ogeto and the defense team representing Francis Kirimi Muthaura achieved a significant legal victory in the ICC case, marking a crucial turning point in Kenya's post-election violence accountability process.",
         "content": {
           "introduction": "In a landmark development for Kenya's international legal representation, **Kennedy Ogeto** and the defense team representing **Francis Kirimi Muthaura** scored a key victory in the International Criminal Court case related to the 2007-2008 post-election violence. This victory represented a significant milestone in the defense strategy and demonstrated the effectiveness of Kenyan legal expertise in international criminal proceedings.",
@@ -557,7 +691,10 @@
             "description": "Report on the legal victory achieved by Francis Muthaura's defense team at the ICC"
           }
         ],
-        "related_posts": ["ogetto-icc-muthaura-initial-appearance-2011", "ogetto-icc-case-investigation-2013"],
+        "related_posts": [
+          "ogetto-icc-muthaura-initial-appearance-2011",
+          "ogetto-icc-case-investigation-2013"
+        ],
         "social_sharing": {
           "twitter_summary": "Kennedy Ogeto and Muthaura's legal team score key victory in ICC case - demonstrating Kenyan legal expertise in international criminal proceedings.",
           "linkedin_summary": "Professional achievement: Kennedy Ogeto's defense team achieves significant victory in ICC case, showcasing Kenya's legal capabilities on the international stage"
@@ -571,7 +708,14 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Criminal Court",
-        "tags": ["ICC", "Francis Muthaura", "Defense Strategy", "International Criminal Law", "Kenya", "Legal Victory"],
+        "tags": [
+          "ICC",
+          "Francis Muthaura",
+          "Defense Strategy",
+          "International Criminal Law",
+          "Kenya",
+          "Legal Victory"
+        ],
         "excerpt": "Kennedy Ogeto, as part of Francis Muthaura's defense team, achieved a significant procedural victory at the International Criminal Court, demonstrating strategic legal expertise in international criminal proceedings.",
         "content": {
           "introduction": "On May 13, 2012, the defense team for **Francis Kirimi Muthaura**, including Kennedy Ogeto as co-counsel, scored a crucial victory at the International Criminal Court. This victory represented a significant milestone in the ICC's Kenya cases and demonstrated the effectiveness of the defense strategy employed by Ogeto and his colleagues.",
@@ -595,7 +739,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-icc-muthaura-initial-appearance-2011", "ogetto-icc-case-involvement-2013"]
+        "related_posts": [
+          "ogetto-icc-muthaura-initial-appearance-2011",
+          "ogetto-icc-case-involvement-2013"
+        ]
       },
       {
         "post_id": "ogetto-ocampo-probe-request-2018",
@@ -605,7 +752,13 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Criminal Court",
-        "tags": ["ICC", "Luis Moreno-Ocampo", "Kenya Cases", "Prosecutorial Misconduct", "International Law"],
+        "tags": [
+          "ICC",
+          "Luis Moreno-Ocampo",
+          "Kenya Cases",
+          "Prosecutorial Misconduct",
+          "International Law"
+        ],
         "excerpt": "As Solicitor General, Kennedy Ogeto was involved in Kenya's formal request for an investigation into former ICC Prosecutor Luis Moreno-Ocampo's handling of the Kenya cases, citing concerns about prosecutorial conduct.",
         "content": {
           "introduction": "On December 7, 2018, Kenya formally requested an investigation into former ICC Prosecutor **Luis Moreno-Ocampo's** conduct in handling the Kenya cases. As Solicitor General, Kennedy Ogeto played a key role in formulating Kenya's position on what the government viewed as prosecutorial misconduct that had undermined the integrity of the ICC proceedings.",
@@ -629,7 +782,10 @@
             "type": "News Article"
           }
         ],
-        "related_posts": ["ogetto-icc-case-involvement-2013", "ogetto-solicitor-general-appointment-2018"]
+        "related_posts": [
+          "ogetto-icc-case-involvement-2013",
+          "ogetto-solicitor-general-appointment-2018"
+        ]
       },
       {
         "post_id": "ogetto-international-arbitrations-victories-2018-2020",
@@ -639,7 +795,15 @@
         "last_updated": "2024-12-19",
         "author": "Research Team",
         "category": "International Investment Law",
-        "tags": ["ICSID", "LCIA", "ICC Arbitration", "International Investment", "Kenya", "Legal Victories", "Arbitration Defense"],
+        "tags": [
+          "ICSID",
+          "LCIA",
+          "ICC Arbitration",
+          "International Investment",
+          "Kenya",
+          "Legal Victories",
+          "Arbitration Defense"
+        ],
         "excerpt": "As Solicitor General, Kennedy Ogeto led Kenya's defense in multiple high-stakes international arbitrations, achieving remarkable victories that saved the country over KSh 270 billion in potential claims.",
         "content": {
           "introduction": "During his tenure as Solicitor General (2018-2022), Kennedy Ogeto spearheaded Kenya's defense in several major international arbitration cases, achieving unprecedented success in protecting the country's financial interests. His strategic legal approach and expertise in international investment law resulted in savings of over **KSh 270 billion** to the Kenyan exchequer.",
@@ -663,14 +827,17 @@
             "type": "Government Report"
           }
         ],
-        "related_posts": ["ogetto-walam-energy-case-2020", "ogetto-solicitor-general-appointment-2018"]
+        "related_posts": [
+          "ogetto-walam-energy-case-2020",
+          "ogetto-solicitor-general-appointment-2018"
+        ]
       }
     ],
     "career_summary": {
       "overview": "Kennedy Ogeto is one of Kenya's most distinguished legal professionals with over 26 years of experience in international and municipal law. His career spans from international criminal tribunals to the highest levels of Kenyan government service.",
       "key_achievements": [
         "Lead defense counsel at UN International Criminal Tribunal for Rwanda",
-        "Co-lead defense counsel at UN Special Court for Sierra Leone", 
+        "Co-lead defense counsel at UN Special Court for Sierra Leone",
         "Legal representative in Uhuru Kenyatta's ICC case",
         "Solicitor General of Kenya (2018-2022)",
         "Legal Adviser to President William Ruto (2023-Present)",
@@ -679,7 +846,7 @@
       ],
       "areas_of_expertise": [
         "International Criminal Law",
-        "Constitutional Law", 
+        "Constitutional Law",
         "International Investment Law",
         "Government Legal Representation",
         "Public Service Law",
@@ -762,6 +929,54 @@
         "Public interest litigation",
         "Legal advisory work"
       ]
-    }
+    },
+    "timeline": [
+      {
+        "date": "2021-06-11",
+        "event_type": "Legal Clarification",
+        "title": "11 June 2021 – Solicitor General Kennedy Ogeto Clarifies NMS Legality",
+        "description": "Solicitor General Kennedy Ogeto addressed public concerns about the National Management System (NMS) legality, clarifying that the court had declared it constitutional.",
+        "significance": "Medium",
+        "sources": [
+          {
+            "url": "https://www.youtube.com/watch?v=ED5jntqRoh0",
+            "title": "Solicitor General Kennedy Ogeto Clarifies NMS Legality",
+            "publication": "YouTube",
+            "date": "2021-06-11",
+            "type": "Video Recording"
+          }
+        ],
+        "related_cases": [],
+        "legal_context": "Affirmed validity of NMS and addressed public misinformation",
+        "metadata": {
+          "post_id": "ogetto-nms-legality-clarification-2021",
+          "category": "Constitutional Law",
+          "word_count": 180
+        }
+      },
+      {
+        "date": "2025-09-04",
+        "event_type": "Government Appointment",
+        "title": "4 September 2025 – Kennedy Ogeto Appointed to Panel of Experts on Compensation of Victims of Protest",
+        "description": "Kennedy Ogeto was sworn in as a member of the Panel of Experts on the Compensation of Victims of Protest, bringing his extensive legal expertise to address victims' rights and compensation matters.",
+        "significance": "High - Important human rights and victims' compensation role",
+        "sources": [
+          {
+            "url": "https://www.youtube.com/watch?v=LocZPStDmb0",
+            "title": "Kennedy Ogeto Sworn in as a member of Panel of Experts on the Compensation of Victims of Protest",
+            "publication": "YouTube - Kenya Digital News",
+            "date": "2025-09-04",
+            "type": "Video Recording"
+          }
+        ],
+        "related_cases": [],
+        "legal_context": "Advancement of victims' rights and compensation frameworks in Kenya",
+        "metadata": {
+          "post_id": "ogetto-compensation-panel-appointment-2025",
+          "category": "Government Appointments",
+          "word_count": 320
+        }
+      }
+    ]
   }
 }

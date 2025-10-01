@@ -1,0 +1,14 @@
+# Netlify redirects for Next.js SPA routing
+/*    /index.html   200
+
+# Admin routes
+/admin/*    /admin/index.html   200
+
+# API routes (if any)
+/api/*    /api/index.html   200
+
+# Blog routes
+/blog/*    /blog/index.html   200
+
+# Timeline route
+/timeline    /timeline/index.html   200

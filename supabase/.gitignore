@@ -1,0 +1,40 @@
+# Supabase (anywhere in supabase directory)
+**/.branches/
+**/.temp/
+**/.env
+**/.env.local
+**/config.toml
+
+# Logs (anywhere in supabase directory)
+**/logs/
+**/*.log
+
+# Database dumps (anywhere in supabase directory)
+**/*.sql
+**/*.dump
+**/*.backup
+**/backups/
+
+# Credentials (anywhere in supabase directory)
+**/service_role_key.txt
+**/anon_key.txt
+**/jwt_secret.txt
+**/.auth
+**/.credentials
+
+# Local development (anywhere in supabase directory)
+**/.local/
+**/local/
+**/tmp/
+**/temp/
+
+# IDE (anywhere in supabase directory)
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+
+# OS (anywhere in supabase directory)
+**/.DS_Store
+**/Thumbs.db
+**/._*
