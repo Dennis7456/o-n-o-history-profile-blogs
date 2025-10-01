@@ -105,12 +105,13 @@ export default function Home() {
             </div>
             
             <div className="flex justify-center lg:justify-end">
-              <div className="relative w-80 h-96 rounded-lg overflow-hidden shadow-2xl">
+              <div className="w-80 h-84 rounded-lg overflow-hidden shadow-2xl">
                 <Image
                   src="/kennedy-ogeto-profile.png"
                   alt={profile?.full_name || 'Kennedy Ogeto'}
-                  fill
-                  className="object-cover"
+                  width={320}
+                  height={336}
+                  className="w-full h-full object-cover"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>

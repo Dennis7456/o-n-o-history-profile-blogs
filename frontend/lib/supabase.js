@@ -242,12 +242,26 @@ export class DatabaseService {
 
   static async createTimelineEntry(entryData) {
     try {
-      const timelineEntry = {
-        ...entryData,
+      // Only include fields that exist in the timeline_entries table
+      const validFields = {
+        entry_date: entryData.entry_date,
+        event_type: entryData.event_type,
+        title: entryData.title,
+        description: entryData.description,
+        significance: entryData.significance,
+        legal_context: entryData.legal_context,
+        related_cases: entryData.related_cases,
+        confidence_level: entryData.confidence_level,
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString()
       }
 
+      // Remove undefined fields
+      const timelineEntry = Object.fromEntries(
+        Object.entries(validFields).filter(([_, value]) => value !== undefined)
+      )
+
+      // Create the main timeline entry (only valid fields)
       const { data, error } = await supabase
         .from('timeline_entries')
         .insert([timelineEntry])
@@ -255,6 +269,13 @@ export class DatabaseService {
         .single()
 
       if (error) throw error
+
+      // TODO: Handle sources creation when timeline_sources table is created
+      // For now, we'll just create the main entry
+      // if (entryData.sources && Array.isArray(entryData.sources)) {
+      //   await this.createTimelineSources(data.id, entryData.sources)
+      // }
+
       return data
     } catch (error) {
       console.error('Error in createTimelineEntry:', error)
@@ -264,11 +285,25 @@ export class DatabaseService {
 
   static async updateTimelineEntry(entryId, entryData) {
     try {
-      const updatedEntry = {
-        ...entryData,
+      // Only include fields that exist in the timeline_entries table
+      const validFields = {
+        entry_date: entryData.entry_date,
+        event_type: entryData.event_type,
+        title: entryData.title,
+        description: entryData.description,
+        significance: entryData.significance,
+        legal_context: entryData.legal_context,
+        related_cases: entryData.related_cases,
+        confidence_level: entryData.confidence_level,
         updated_at: new Date().toISOString()
       }
 
+      // Remove undefined fields
+      const updatedEntry = Object.fromEntries(
+        Object.entries(validFields).filter(([_, value]) => value !== undefined)
+      )
+
+      // Update the main timeline entry (only valid fields)
       const { data, error } = await supabase
         .from('timeline_entries')
         .update(updatedEntry)
@@ -277,6 +312,13 @@ export class DatabaseService {
         .single()
 
       if (error) throw error
+
+      // TODO: Handle sources update when timeline_sources table is created
+      // For now, we'll just update the main entry
+      // if (entryData.sources && Array.isArray(entryData.sources)) {
+      //   await this.updateTimelineSources(entryId, entryData.sources)
+      // }
+
       return data
     } catch (error) {
       console.error('Error in updateTimelineEntry:', error)
@@ -302,26 +344,49 @@ export class DatabaseService {
   }
 
   static async getTimelineEntry(entryId) {
-    const { data, error } = await supabase
-      .from('timeline_entries')
-      .select(`
-        *,
-        timeline_sources (
-          url,
-          title,
-          publication,
-          source_date,
-          source_type
-        )
-      `)
-      .eq('id', entryId)
-      .single()
+    try {
+      // Try to get entry with sources first
+      const { data, error } = await supabase
+        .from('timeline_entries')
+        .select(`
+          *,
+          timeline_sources (
+            url,
+            title,
+            publication,
+            source_date,
+            source_type
+          )
+        `)
+        .eq('id', entryId)
+        .single()
 
-    if (error) throw error
+      if (error) {
+        // If timeline_sources relationship doesn't exist, get entry without sources
+        if (error.code === 'PGRST200') {
+          const { data: entryData, error: entryError } = await supabase
+            .from('timeline_entries')
+            .select('*')
+            .eq('id', entryId)
+            .single()
 
-    return {
-      ...data,
-      sources: data.timeline_sources || []
+          if (entryError) throw entryError
+          
+          return {
+            ...entryData,
+            sources: []
+          }
+        }
+        throw error
+      }
+
+      return {
+        ...data,
+        sources: data.timeline_sources || []
+      }
+    } catch (error) {
+      console.error('Error in getTimelineEntry:', error)
+      throw error
     }
   }
 
@@ -386,14 +451,26 @@ export class DatabaseService {
 
   // Scraping log operations
   static async getScrapingLog(limit = 50) {
-    const { data, error } = await supabase
-      .from('scraping_log')
-      .select('*')
-      .order('scraping_date', { ascending: false })
-      .limit(limit)
+    try {
+      const { data, error } = await supabase
+        .from('scraping_log')
+        .select('*')
+        .order('scraping_date', { ascending: false })
+        .limit(limit)
 
-    if (error) throw error
-    return data || []
+      if (error) {
+        // If table doesn't exist, return empty array
+        if (error.code === 'PGRST205') {
+          console.log('scraping_log table not found, returning empty array')
+          return []
+        }
+        throw error
+      }
+      return data || []
+    } catch (error) {
+      console.log('Error accessing scraping_log table:', error.message)
+      return []
+    }
   }
 }
 

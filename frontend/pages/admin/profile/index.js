@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Layout from '../../../components/Layout'
 import { useAuth } from '../../../contexts/AuthContext'
-import { Save, Upload, User, Briefcase, GraduationCap, Award } from 'lucide-react'
+import { Save, User, Briefcase, GraduationCap } from 'lucide-react'
 import toast from 'react-hot-toast'
 
 export default function AdminProfile() {
@@ -16,10 +16,7 @@ export default function AdminProfile() {
     undergraduate: "Bachelor's degree in Law from University of Nairobi",
     graduate: "Master's degree in Law from University of Nairobi",
     professional: 'Diploma in Legal Practice from Kenya School of Law',
-    institutions: ['University of Nairobi', 'Kenya School of Law'],
-    featured_image_url: '/kennedy-ogeto-profile.png',
-    featured_image_alt: 'Kennedy Ogeto - Professional Portrait',
-    featured_image_caption: 'Kennedy Ogeto - Professional Portrait'
+    institutions: ['University of Nairobi', 'Kenya School of Law']
   })
   
   const [loading, setLoading] = useState(false)
@@ -268,73 +265,7 @@ export default function AdminProfile() {
             </div>
           </div>
 
-          {/* Featured Image */}
-          <div className="card">
-            <div className="card-header">
-              <h2 className="text-lg font-semibold text-gray-900 flex items-center">
-                <Award className="w-5 h-5 mr-2" />
-                Featured Image
-              </h2>
-            </div>
-            <div className="card-body space-y-6">
-              <div>
-                <label htmlFor="featured_image_url" className="block text-sm font-medium text-gray-700 mb-2">
-                  Image URL
-                </label>
-                <input
-                  type="url"
-                  id="featured_image_url"
-                  name="featured_image_url"
-                  value={profile.featured_image_url}
-                  onChange={handleInputChange}
-                  className="form-input"
-                />
-              </div>
 
-              <div>
-                <label htmlFor="featured_image_alt" className="block text-sm font-medium text-gray-700 mb-2">
-                  Alt Text
-                </label>
-                <input
-                  type="text"
-                  id="featured_image_alt"
-                  name="featured_image_alt"
-                  value={profile.featured_image_alt}
-                  onChange={handleInputChange}
-                  className="form-input"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="featured_image_caption" className="block text-sm font-medium text-gray-700 mb-2">
-                  Caption
-                </label>
-                <textarea
-                  id="featured_image_caption"
-                  name="featured_image_caption"
-                  value={profile.featured_image_caption}
-                  onChange={handleInputChange}
-                  rows={3}
-                  className="form-textarea"
-                />
-              </div>
-
-              {/* Image Preview */}
-              <div className="mt-4">
-                <p className="text-sm font-medium text-gray-700 mb-2">Current Profile Image</p>
-                <div className="w-32 h-32 rounded-lg overflow-hidden border border-gray-200">
-                  <img
-                    src="/kennedy-ogeto-profile.png"
-                    alt="Kennedy Ogeto Profile"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <p className="text-xs text-gray-500 mt-2">
-                  Profile image is managed locally. To update, replace the file in the public directory.
-                </p>
-              </div>
-            </div>
-          </div>
 
           {/* Save Button */}
           <div className="flex justify-end">

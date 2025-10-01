@@ -235,7 +235,7 @@ export default function AdminDashboard() {
                 </button>
 
                 <button
-                  onClick={() => router.push('/admin/timeline/new')}
+                  onClick={() => router.push('/admin/timeline/create')}
                   className="btn-secondary flex items-center justify-center"
                 >
                   <Clock className="w-4 h-4 mr-2" />
